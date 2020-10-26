@@ -1,0 +1,24 @@
+# Copyright 2020, alex at staticlibs.net
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+prefix=/usr
+
+Name: soci
+Version: 3.2.3.2
+Description: C++ database access library
+Requires:
+Libs: -lsoci_core -lsoci_postgresql -lsoci_sqlite3
+Libs.private:
+Cflags: -I${prefix}/include/soci -I${prefix}/include/postgresql

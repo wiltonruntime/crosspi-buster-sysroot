@@ -1,0 +1,13 @@
+prefix="/usr"
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
+
+Name: libgit2
+Description: The git library, take 2
+Version: 0.27.7
+
+Libs: -L${libdir} -lgit2
+Libs.private: -lrt -lpthread -L/usr/lib/arm-linux-gnueabihf -lmbedtls -lmbedx509 -lmbedcrypto -lhttp_parser -lssh2
+Requires.private: zlib
+
+Cflags: -I${includedir}

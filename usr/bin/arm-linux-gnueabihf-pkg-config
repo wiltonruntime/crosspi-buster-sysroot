@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PKG_CONFIG_PATH=/opt/cross-pi-gcc-sysroot/usr/lib/arm-linux-gnueabihf/pkgconfig/:$PKG_CONFIG_PATH
+pkg-config --define-variable=prefix=/opt/cross-pi-gcc-sysroot/usr/ "$@"
