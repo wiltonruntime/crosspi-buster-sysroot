@@ -26,7 +26,7 @@
 prefix=/usr
 exec_prefix=${prefix}
 libdir=${prefix}/lib/arm-linux-gnueabihf
-includedir=/usr/include/arm-linux-gnueabihf
+includedir=${prefix}/include/arm-linux-gnueabihf
 supported_protocols="DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS LDAP LDAPS POP3 POP3S RTMP RTSP SCP SFTP SMB SMBS SMTP SMTPS TELNET TFTP"
 supported_features="SSL IPv6 UnixSockets libz AsynchDNS IDN GSS-API PSL SPNEGO Kerberos NTLM NTLM_WB TLS-SRP HTTP2 HTTPS-proxy"
 

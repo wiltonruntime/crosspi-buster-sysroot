@@ -1,7 +1,7 @@
 prefix=/usr
 exec_prefix=/usr
-libdir=/usr/lib/arm-linux-gnueabihf
-includedir=/usr/include
+libdir=${prefix}/lib/arm-linux-gnueabihf
+includedir=${prefix}/include
 
 Name: Atk
 Description: Accessibility Toolkit
